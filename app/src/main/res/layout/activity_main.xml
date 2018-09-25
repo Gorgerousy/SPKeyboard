@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="欢迎使用SP软键盘"
+        android:textSize="30dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></View>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/random_board"
+        android:textAllCaps="false"
+        android:background="@android:color/holo_green_light"
+        android:text="RandomBoard"
+        android:textSize="18dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></View>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_board"
+        android:textAllCaps="false"
+        android:background="@color/colorAccent"
+        android:text="TimeCatcher"
+        android:textSize="18dp"/>
+
+</LinearLayout>

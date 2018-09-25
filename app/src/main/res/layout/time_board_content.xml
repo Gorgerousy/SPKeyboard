@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--android:focusable和android:focusableInTouchMode两个属性使EditText在应用打开时不获取焦点
+    避免自动弹出系统的输入法键盘-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mykeyboard_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#999999"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/board_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sp软键盘之TimeCatcherBoard"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@android:color/primary_text_light"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <com.example.pgn.spkeyboard.TimeCatcherKeyboardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_keyboard"
+        android:background="#999999"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        android:keyBackground="@drawable/selector_keyboard_key"
+
+        android:keyPreviewHeight="64dip"
+        android:keyPreviewLayout="@layout/view_keyboard_preview"
+
+        android:keyTextColor="@android:color/black"
+        android:keyTextSize="24sp"
+
+        android:labelTextSize="18sp"
+        android:paddingTop="8dip"
+
+        android:shadowColor="#FFFFFF"
+        android:shadowRadius="0.0"
+
+        android:layout_below="@id/board_title"
+        android:visibility="gone"/>
+
+</RelativeLayout>
